@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9c9d4; /* Rosa claro */
+            font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 16px; /* Bordas mais arredondadas */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+            width: 350px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(240, 140, 174, 0.3); /* Bolha decorativa rosa translúcida */
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .login-container::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(240, 140, 174, 0.2); /* Outra bolha decorativa */
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .login-container h2 {
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .login-container input:focus {
+            outline: none;
+            box-shadow: 0 0 8px rgba(240, 140, 174, 0.6); /* Efeito de foco no input */
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #f08cae; /* Botão rosa */
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: #e57fa2; /* Cor mais escura no hover */
+        }
+
+        .login-container a {
+            display: block;
+            margin-top: 20px;
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-container a:hover {
+            color: #555;
+            text-decoration: underline;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <a href="#">Esqueci minha senha</a>
+        </form>
+    </div>
+</body>
+</html>
